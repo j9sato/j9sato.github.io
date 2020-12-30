@@ -364,7 +364,7 @@ height: 4px;
   height: 800px;
   position: absolute;
   display: block;
-  top:800px;
+  top:100%;
   left: 0;
   background-image:url("images/line.png");
   background-color: white;
