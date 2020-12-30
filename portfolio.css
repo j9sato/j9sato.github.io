@@ -184,7 +184,6 @@ table {
   /*This sets the font size and removes the default bullets from the ul list. Also sets the overall width of the ul as a percentage of the containing element*/
     .nav ul {
     font-family: "Lato";
-    src: url("../http://fonts.googleapis.com/css?family=Lato") format('truetype')
     font-size: 1em;
     list-style: none;
     clear: both; 
