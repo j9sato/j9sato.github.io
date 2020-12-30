@@ -1,0 +1,1152 @@
+/*CSS for Janine Sato's Portfolio Website*/
+
+/* Start of CSS reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+/*ol,
+ul {
+  list-style: none;
+}*/
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end of CSS reset*/
+
+/* Start of Header*/
+  .header {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100px;
+  opacity: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  z-index: 1000;
+  }
+
+/*Start of logo*/
+
+.anchorlogo{
+  display: block;
+}
+
+  .logo img{
+    margin:1em 0 0 2em;
+    display: block;
+    float:left;
+    z-index: 1001;
+    max-width: 200px;
+  }
+ 
+/*Start of Nav menu*/
+  /*The width of the menu bar*/
+    .nav {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    clear:both;
+    }
+            
+  /*This sets the font size and removes the default bullets from the ul list. Also sets the overall width of the ul as a percentage of the containing element*/
+    .nav ul {
+    font-family: "Lato";
+    font-size: 1em;
+    list-style: none;
+    clear: both; 
+    float:right;
+    margin: 2.8em 2em 0 0;
+    }
+            
+  /*This sets the list items to display as inline, with an even amount of padding to seperate each block*/
+    .nav ul li {
+    display: inline;
+    padding: 2em 1em 1em 1em; 
+    overflow: hidden;
+    }
+            
+  /*Sets each a link to display as inline block and sets the color of the links */
+    .nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    }
+            
+  /*Modify hover color of link boxes*/
+    .nav ul li a:hover { 
+    color: gray;
+    }
+        
+/* END .nav MENU */
+
+/* The container sets the width as a percentage of the browser window and margin 0 auto centers the page*/
+  .container {
+  width: 100%;
+  overflow-x: hidden;
+  }
+
+/*home section*/
+#home{
+  background: #pink;
+  background:#FFE8E9;
+  background: url(images/homepagebackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-image: url("images/homepagebackground.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;*/
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  display: block;
+  top:0;
+  left: 0;
+}
+
+#home p{
+font-family: "Kalam", cursive;
+font-size:9em;
+font-weight: 700;
+text-align: center;
+margin-bottom:-140px;
+padding-bottom: 1em;
+}
+
+#home h1{
+  font-family: "Lato";
+  font-size: 1.3em;
+  line-height: 150%;
+  width:50%;
+  text-align: center;
+  padding: 0% 0 2% 0;
+  margin: 0 auto;
+
+}
+
+#home img{
+    width:10%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center-block{
+  width: 100%;
+  margin-top:250px;
+}
+
+em{
+  font-style: italic;
+}
+
+strong{
+  font-weight: 900;
+}
+
+.line-break{
+height: 4px;
+  width: 60px;
+  color: #000;
+  border-bottom: 4px solid black;
+  margin: 0 auto;
+
+}
+
+/*bouncing arrow*/
+
+.bounce {
+  position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+  height:100px;
+  width:100px;
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  -webkit-animation:bounce 1s infinite;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bounce polygon {
+  fill: white;
+  fill-opacity: 50%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.bounce:hover polygon {
+  fill: transparent;
+}
+
+/*.bounce .smile {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  transform: rotate(180deg);
+  display: block;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+}*/
+
+/*.smile{
+  opacity:.5;
+}*/
+
+.bounce:hover .smile {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+@-webkit-keyframes bounce {
+  0%{
+    top:5px;
+  }
+  
+  25%, 75% {
+    top:15px;
+  }
+  
+  
+  50% {
+    top:20px;
+  }
+  
+  100% {
+    top:0;
+  }
+}
+/*end of home section*/
+
+/*about section*/
+
+.about-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about{
+  height: 800px;
+  position: absolute;
+  display: block;
+  top:800px;
+  left: 0;
+  background-image:url("images/line.png");
+  background-color: white;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+/*.about-para{
+  margin-top: %;
+  padding-right: 6%;
+}*/
+
+#about p{
+  width:40%;
+  font-family: "Lato";
+  font-size: 1.05em;
+  line-height: 150%;
+  word-spacing: 110%;
+  float: left;
+  /*padding-bottom: 1em;*/
+  padding: 5%;
+}
+
+
+
+.me-circle{
+  float: left;
+  width: 40%;
+  display: block;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.about-block{
+  display: block;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+h2{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 125%;
+  display: block;
+  margin: 10% 0 0 11%;
+  letter-spacing: .03em;
+}
+
+#about h2{
+  margin-left: 10%;
+}
+
+#work h2{
+  visibility: hidden
+}
+
+/*heart at the bottom of the about page*/
+.heart img{
+  max-width: 4%;
+  clear: both;
+ position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 7%;
+}
+/*end of the about section*/
+
+/*work section*/
+#work{
+  width: 100%;
+  height: 1800px;
+  position: absolute;
+  top:1600px;
+  left: 0;
+  display: block;
+  background-image: url("images/crossword-copy.png");
+}
+
+.work-container{
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 80%;
+  height: 0 auto;
+}
+.grid {
+  display:block;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  /*min-width: 280px;*/
+  max-width: 320px;
+  max-height: 320px;
+  width: 100%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 999;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+ 
+.grid figure h3 {
+  word-spacing: 0.1em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 2%;
+}
+
+.grid figure h3 span {
+  font-weight: 900;
+}
+
+.grid figure h3,
+.grid figure p {
+  margin:0 auto; 
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/*grid hover effects*/
+
+figure.effect-ming {
+  background: #030c17;
+}
+
+figure.effect-ming img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  bottom: 100px;
+  left: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.4,1.4,1);
+  transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h3 {
+  margin: 30% 20% 20% 0;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+  margin-top: -15%;
+  margin-left: 2.5%;
+  text-align: center;
+  width:75%;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+}
+
+figure.effect-ming:hover h2 {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+  background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+  opacity: 0.4;
+}
+
+br {
+    line-height: 150%;
+    }
+
+/*resume*/
+
+#resume h2{
+  margin-left: 20%;
+}
+
+#resume{
+  width: 100%;
+  height: 1800px;
+  position: absolute;
+  top:2900px;
+  left: 0;
+  display: block;
+  background:#FFF;
+}
+
+.resume-container {
+  /*margin: 0 0 0 5%;*/
+  width: 100%;
+}
+.resume-full{
+  margin-top: 5%;
+}
+
+.resume-section {
+  width: 100%;
+  float: left;
+}
+
+.column-left,
+.column-right {
+  float: left;
+}
+
+
+.column-left {
+  width: 30%; 
+}
+
+.column-right {
+  width: 52%;
+}
+
+.resume-container h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #000;
+  padding-top: 10px;
+  text-align: right;
+  padding-right: 15px;
+  font-family: 'Lato'
+}
+
+
+.resume-section span{
+font-weight:900; 
+font-style: italic;
+}
+
+
+.resume-container p {
+  font-family: 'Lato';
+  font-size: 1em;
+  line-height: 140%;
+  font-weight: 300;
+  color: #000;
+  padding-top: 10px;
+}
+
+.resume-container li {
+  font-family: 'Lato';
+  font-size: 1em;
+  line-height: 140%;
+  font-weight: 300;
+  color: #000;
+  margin-left: 20px;
+}
+
+.three-columns {
+  width: 100%;
+    }
+
+.resume-three {
+  width: 33%;
+  float: left;
+  margin-left:-20px;
+    }
+
+.resume-three ul li {
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top:10px;
+  list-style: none;
+  }
+
+.download-button a{
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  background-color: #000;
+  clear: both;
+  display: inline-block;
+  margin: 5% 40% 0 40%;
+}
+
+.download-button a:hover{
+  color: white;
+  background-color:gray;
+}
+
+
+/*end of resume*/
+
+/*start of contact form*/
+
+#contact{
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top:4800px;
+  left: 0;
+  display: block;
+  background: #pink;
+  background-image: url("images/crossword-copy.png");
+}
+
+#contact #contact-form{
+  padding-top: 10%;
+}
+  
+#contact-form h3{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 125%;
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+  letter-spacing: .03em;
+}
+
+h4{
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 125%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom:5%;
+  letter-spacing: .03em;
+  width: 80%;
+} 
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: "Lato";
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid gray; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: "Lato";
+  width: 100%;
+  background:#000;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:gray; }
+
+/*Common Work Page Styling */
+
+.work-container{
+  width:1280px;
+  max-width: 100%;
+}
+
+.description h4{
+font-family: "Lato" sans-serif;
+  font-weight:700;
+  font-size: 1.1em;
+  color: gray;
+  line-height: 160%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.description p{
+  padding-top: 1em;
+}
+
+.description{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  width: 45%;
+  line-height: 160%;
+  display:block;
+  padding: 5% 5% 0 5%;
+  float: left;
+}
+
+.description2 {
+  font-family:"Lato", sans-serif;
+  font-weight:900;
+  font-size: 1.6em;
+  color: #000;
+  line-height: 350%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 5% 5% 0 5%;
+  float: left;
+}
+
+.description h3 {
+  display:inline block;
+  font-family:"Lato", sans-serif;
+  font-weight:900;
+  font-size: 1.7em;
+  color: #000;
+  line-height: 350%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  clear: both;
+}
+
+.hero{
+  width:100%;
+}
+
+.itemcontainer{
+width: 100%; 
+overflow: hidden; 
+text-align: center;
+}
+
+/* Revel Magazine*/
+
+.description-revel{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  width: 45%;
+  line-height: 160%;
+  display:block;
+  padding: 5%;
+  float: left;
+}
+
+.description-revel h3{
+  display:block;
+  font-family:"Lato", sans-serif;
+  font-weight:900;
+  font-size: 1.7em;
+  color: #000;
+  line-height: 160%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;}
+
+  .description-revel h4{
+  font-family: "Lato" sans-serif;
+  font-weight:700;
+  font-size: 1.1em;
+  color: gray;
+  line-height: 160%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  }
+
+
+.ipadleft{
+  display: inline-block;
+  margin-right: -30px;
+}
+
+.ipadvertical{
+  display: inline-block;
+}
+
+.ipadright{
+  display: inline-block;
+  margin-left: -25px;
+}
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+/*Brave Stickers*/
+.plates{
+  margin-top: 100px;
+}
+
+.sketcharrow{
+  width: 100%;
+}
+
+.sketchleft{
+  display: inline-block;
+  margin-right: -100px;
+  width:50%;
+}
+
+.sketchright{
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+/*Oasis Menus*/
+.windowmenu{
+  margin: 60px 0 0 100px;
+  display: inline-block;
+}
+
+.menuleft{
+  display: inline-block;
+  margin-right:50px;
+  vertical-align: 50px;
+}
+
+.menuright{
+  display: inline-block;
+
+}
+
+/*Lion Sweatshirts*/
+.lionsketch{
+  margin: 100px 100px 0 100px;
+  display: inline-block;
+}
+
+.itemleft{
+  display: inline-block;
+  margin-right:50px;
+}
+
+.itemright{
+  display: inline-block;
+}
+
+
+/*Flipped Book Jacket*/
+
+.flippedlogo{
+  margin: 100px 100px 0 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.itemcontainer_jacket{
+width: 100%; 
+overflow: hidden; 
+text-align: center;
+margin-top: 5%;
+}
+/*CPE Flyer*/
+
+.cpelogo{
+  margin: 100px 100px 0 100px;
+  display: inline-block;
+}
+
+.description-cpe{
+  margin: 5% 0 3% 5%;
+  font-family:"Lato", sans-serif;
+  font-weight:900;
+  font-size: 1.7em;
+  color: #000;
+  line-height: 160%;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*Eskimoo Website*/
+.websitelink a{
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  background-color: #000;
+  clear: both;
+  display: inline-block;
+  margin: 30px 0 100px 0;
+}
+
+.websitelink a:hover{
+  color: gray;
+  border: 1px solid gray;
+  background-color:white;
+}
+
+.websitescreen{
+  padding-bottom: 50px;
+}
+
+.websitescreen img{
+  border: 1px solid black;
+}
+
+/*Tailgate in a Box Website*/
+.soccerleft{
+overflow: hidden; 
+display: inline-block;
+margin: -5% 0 -5% 0;
+}
+.soccerright{
+overflow: hidden; 
+display: inline-block;
+margin: -5% 0 -5% 0;
+}
+
+.itemcontainer2{
+  clear: both;
+  text-align: center;
+  display: block;
+}
+
+.soccerleft2{
+display: inline-block;
+padding: 2%;
+}
+
+.soccerright2{
+display: inline-block;
+padding: 2%;
+}
+
+.box{
+  float: left;
+  margin-top: 150px;
+  padding: 0 5% 0 0;
+  max-width: 100%;
+}
+
+/*small navigation for projects*/
+.subnav{
+  text-align: center;
+  width: 100%;
+}
+
+.subnav li{
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin: 100px 25px;
+}
+
+.subnav li a{
+text-decoration:none;
+color: gray;
+border: 1px solid gray;
+padding: 1em;
+}
+
+.subnav li a:hover{
+color: black;
+/*border: 1px solid pink;*/
+}
+
+/*footer at the bottom of the page*/
+
+#footer {
+  padding: .90%;
+  width: 80%;
+  border-top: 1.5px solid black;
+  margin: 0 auto;
+
+}
+
+#footer p {
+  width: 50%;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+  text-align: center;
+  line-height: 150%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+.me-circle{
+  width: 80%;}
+
+}

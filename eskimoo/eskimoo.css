@@ -1,0 +1,645 @@
+/*CSS for Janine Sato's Eskimoo Creamery Site*/
+
+/* Start of CSS reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end of CSS reset*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 600px;
+}
+
+/*logo in nav menu*/
+
+.logo {
+  background: url('eskimoo_images/eskimoo_logo.png') no-repeat;
+  display: inline-block;
+  width: 182px;
+  height: 188px;
+  margin: 20px 25px 0 25px;
+}
+
+/*Start of Nav menu*/
+
+/*The background color and width of the menu bar*/
+
+.nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  text-align: center;
+  clear: both;
+  background: url('eskimoo_images/navbackground2.png') repeat;
+  z-index: 100;
+}
+
+/*This sets the font size and removes the default bullets from the ul list. Also sets the overall width of the ul as a percentage of the containing element*/
+
+.nav ul {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  list-style: none;
+  clear: both;
+}
+
+/*This sets the list icecreams to display as inline, with an even amount of padding to seperate each block*/
+
+.nav ul li {
+  display: inline;
+  padding: 1em 1em 1em 1em;
+  overflow: hidden;
+}
+
+/*Sets each a link to display as inline block and sets the color of the links */
+
+.nav ul li a {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/*Modify hover color of link boxes*/
+
+.nav ul li a:hover {
+  color: #F69;
+}
+
+/*slideshow on homepage*/
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 220px;
+}
+
+/*banner that sit on top of slideshow on homepage*/
+
+.banner {
+  background-color: #399;
+  -webkit-opacity: 0.80;
+  -moz-opacity: 0.80;
+  -ms-opacity: 0.80;
+  -o-opacity: 0.80;
+  opacity: 0.80;
+  margin: 0 auto;
+  margin-top: -153px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #FFF;
+  padding: 20px 0 20px 50px;
+  position: relative;
+  z-index: 90;
+}
+
+/*headings for the site*/
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #FFF;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #399;
+  margin: 10% 0 5% 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 2.1em;
+  color: #399;
+  margin: 10% 0 3% 0;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.locations h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  line-height: 200%;
+}
+
+/* Banners running across the page */
+
+.beginning {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000;
+  padding: 2%;
+  width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 20% 0 0 0;
+  display: block;
+  background-color: #FFFFE0;
+}
+
+.love {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000;
+  padding: 2%;
+  width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 2% 0 0 0;
+  display: block;
+  background-color: #AFDCEC;
+}
+
+.location_banner {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000;
+  padding: 2%;
+  width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 20% 0 0 0;
+  display: block;
+  background-color: #CCFFFF;
+}
+
+.icecream_banner {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  color: #000;
+  padding: 2%;
+  width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 20% 0 0 0;
+  display: block;
+  background-color:#FFCCFF;
+}
+
+/*Sets the space in between paragraphs*/
+
+p {
+  margin-bottom: .9em;
+}
+
+/* Content on the page */
+
+/* Welcome message on the homepage */
+
+.welcome {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  width: 70%;
+  margin-top: 10%;
+  margin: 0 auto;
+  line-height: 150%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*content for the about page*/
+
+.about {
+  float: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  width: 30%;
+  margin: 2% 0 2% 5%;
+  line-height: 150%;
+}
+
+/* location content*/
+
+.locations {
+  float: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  width: 20%;
+  margin: 3% 0 2% 30%;
+  line-height: 150%;
+}
+
+.locations i {
+  font-style: italic;
+  font-weight: 700;
+  color: #399;
+}
+
+.locations b {
+  font-weight: bold;
+}
+
+/*location hovers*/
+
+.sf_link h1:hover,
+.sf {
+  color: pink;
+  fill: pink;
+}
+
+.sj_link h1:hover,
+.san_jose {
+  color: #6699CC;
+  fill: #6699CC;
+}
+
+.sac_link h1:hover,
+.sacramento {
+  color: #9999CC;
+  fill: #9999CC;
+}
+
+.la_link h1:hover,
+.la {
+  color: #CC6666;
+  fill: #CC6666;
+}
+
+/* images */
+
+.spoons {
+  margin: 0 auto;
+  margin-top: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+.storefront {
+  width: 56%;
+  float: right;
+  margin: 5% 5% 8% 0%;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  -ms-opacity: 0.9;
+  -o-opacity: 0.9;
+  opacity: 0.9;
+}
+
+/*ice cream hovers*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding-top:3%;
+}
+
+.icecream {
+  text-align: center;
+  float: left;
+  margin: 5px;
+  position: relative;
+}
+
+.map {
+  float: left;
+  text-align: left;
+  width: 20%;
+  margin-top: -10%;
+}
+
+.icecream,
+.icecream-hover,
+.icecream-hover .mask,
+.icecream-img,
+.icecream-info {
+  width: 300px;
+  height: 225px;
+}
+
+.icecream-hover,
+.icecream-hover .mask,
+.icecream-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icecream-type-line .icecream-hover {
+  z-index: 99;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+  display: block;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icecream-type-line .icecream-info {
+  z-index: 5;
+  z-index: 5;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.icecream-type-line .icecream-info .headline {
+  font-size: 20px;
+}
+
+.icecream-type-line .icecream-info .line {
+  height: 1px;
+  width: 0%;
+  margin: 15px auto;
+  background-color: #000;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.icecream-type-line .icecream-info .date {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 130%;
+}
+
+.icecream-type-line .icecream-hover .mask {
+  background-color: #FFF;
+  -webkit-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -moz-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -o-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -webkit-filter: alpha(opacity=30);
+  -moz-filter: alpha(opacity=30);
+  -ms-filter: alpha(opacity=30);
+  -o-filter: alpha(opacity=30);
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  -ms-opacity: 0.7;
+  -o-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.icecream-type-line .icecream-hover:hover .line {
+  width: 40%;
+}
+
+.icecream-type-line .icecream-hover:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+/*heart at the bottom of each page*/
+
+.heart {
+  font-size: 5.5em;
+  color: pink;
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  clear: both;
+}
+
+/*footer at the bottom of the page*/
+
+#footer {
+  margin-top: 5%;
+  background-color: pink;
+  width: 100%;
+  padding: .90%;
+}
+
+#footer p {
+  width: 50%;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+  text-align: center;
+  line-height: 150%;
+  margin: 0 auto;
+}
