@@ -211,9 +211,10 @@ table {
         
 /* END .nav MENU */
 
-/* The container sets the width as a percentage of the browser window and margin 0 auto centers the page*/
+/* The container sets the width and height as a percentage of the browser window and margin 0 auto centers the page*/
   .container {
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
   }
 
